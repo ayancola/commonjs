@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>常用效果</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <script type="text/javascript" src="js/jquery.ii.min.js"></script>
+    <script type="text/javascript" src="js/common_top.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <style>
+        #hello{height: 400px;}
+        #about{height: 400px;}
+        #service{height: 400px;}
+    </style>
+</head>
+<body>
+    <div class="header" >
+        <ul class="nav-container clearfix">
+            <li class='on'><a href="">首页</a></li>
+            <li><a href="">关于我们</a></li>
+            <li><a href="">产品中心</a></li>
+        </ul>
+    </div>
+    <div class="mobg">
+        <a class="nav_xl_a"><span></span></a>
+        <ul class="mobnav">    
+            <li><a href="/">首页</a></li>
+            <li><a href="">公司简介</a></li>
+            <li><a href="">荣誉证书</a></li>
+            <li><a href="">合作伙伴</a></li>
+            <li><a href="">English</a></li>
+            <!--<li><a class="s-btn">搜索</a></li>-->
+        </ul>
+    </div>    
+    <div class="collapse navbar-collapse" id="navbar-menu">
+        <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+            <li><a href="#hello">Hello</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#service">Services</a></li>
+        </ul>
+    </div>
+    <div class="tap_group">
+        <ul class="tap_btnlist">
+            <li>搜索框</li>
+            <li>下拉二级菜单</li>
+            <li>自定义弹出框</li>
+        </ul>
+        <div class="tap_box show" style="display: block;">
+           <p>搜索框</p>
+            <div class="search">
+                <a class="s-btn"></a>
+                <div class="s_ceng">
+                    <a class="gb"></a>
+                    <form action="" method="post">
+                        <input name="action" type="hidden" value="search">
+                        <input name="stype" type="hidden" value="all">
+                        <input name="keyword" id="keyword" placeholder="Enter search keywords">
+                        <button type="submit" class="s"></button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+        <div class="tap_box">
+            <p>下拉二级菜单</p>
+            <div class="mobsnav">
+                <a class="sort_btn">关于我们</a>
+                <ul class="sort_nav clearfix">
+                  <li><a href="">公司简介</a></li>
+                  <li><a href="">荣誉证书</a></li>
+                  <li><a href="">合作伙伴</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="tap_box">
+            <p>自定义弹出框</p>
+            <a href="javascript:void(0);" onclick="tj()" id="tj-btn">点击提交</a>
+        </div>
+    </div>
+
+    <div class="login-tip"></div>
+    <div id="myBtn"><a href="javascript:void(0);"></a></div>
+    <div id="hello">hello</div>
+    <div id="about">about</div>
+    <div id="service">service</div>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
